@@ -1,6 +1,6 @@
-# LandingPage
-Universal landing page for small business.
+# LandingPage 🚀
 
+Universal landing page for small business.
 
 # Getting Started with Create React App
 
