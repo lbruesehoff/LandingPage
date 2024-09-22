@@ -1,24 +1,21 @@
 import React from "react";
-
+import "./hero.component.scss";
 const Hero = () => {
   return (
-    <div
-      className="hero min-h-screen"
-      style={{
-        backgroundImage:
-          "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-      }}
-    >
+    <div className="hero min-h-screen hero-background">
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+          <h1 className="mb-5 text-5xl font-bold">
+            Your Trusted Local Plumbing Experts
+          </h1>
           <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+            At [Your Plumbing Company Name], we deliver reliable, expert
+            plumbing services for homes and businesses in [City/Region]. From
+            quick repairs to full installations, our licensed team is here to
+            handle all your plumbing needs with efficiency and care.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary">Call Us Today</button>
         </div>
       </div>
     </div>

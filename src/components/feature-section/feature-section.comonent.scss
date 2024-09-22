@@ -1,0 +1,40 @@
+.about-us {
+  min-height: 65vh;
+}
+
+.all-services {
+  background-color: #f2f2f2;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding: 2rem 0;
+}
+
+.services-title {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.individual-service {
+  padding: 1rem 0;
+}
+
+// RESPONSIVE
+
+//HIGH RES DISPLAYS
+@media only screen and (min-width: 1281px) {
+  .services {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// MOBILE / TABLET
+@media only screen and (max-width: 961px) {
+  .services {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
