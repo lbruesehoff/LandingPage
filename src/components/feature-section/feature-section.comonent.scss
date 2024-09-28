@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .services-title {
@@ -35,6 +35,7 @@
 @media only screen and (max-width: 961px) {
   .services {
     grid-template-columns: 1fr;
+    padding: 2rem 0;
     row-gap: 2rem;
   }
 }

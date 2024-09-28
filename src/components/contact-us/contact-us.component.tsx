@@ -32,6 +32,17 @@ const ContactUs = () => {
             </div>
             <div className="form-control">
               <label className="label">
+                <span className="label-text">Phone Number</span>
+              </label>
+              <input
+                type="phone"
+                placeholder="Phone Number..."
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
                 <span className="label-text">Message</span>
               </label>
               <textarea

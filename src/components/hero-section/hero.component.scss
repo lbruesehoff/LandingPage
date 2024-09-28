@@ -2,3 +2,12 @@
   background-image: url("../../assets/images/hero-plumbing.jpg");
   min-height: 50vh;
 }
+
+//RESPONSIVE
+
+// MOBILE / TABLET
+@media only screen and (max-width: 961px) {
+  .hero-background {
+    min-height: 100vh;
+  }
+}
