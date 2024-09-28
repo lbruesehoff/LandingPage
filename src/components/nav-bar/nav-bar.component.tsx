@@ -1,5 +1,6 @@
 import React from "react";
 import "./nav-bar.component.scss";
+import logo from "../../assets/icons/logo.svg";
 
 const NavBar = () => {
   const scrollTo = (id: string) => {
@@ -44,7 +45,10 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <div className="logo-container">
+          <img src={logo} alt="Shoes" className="logo" />{" "}
+          <div className="logo-name">Plumbing</div>
+        </div>
       </div>
       {/* DESKTOP VIEW */}
       <div className="navbar-center hidden lg:flex">
