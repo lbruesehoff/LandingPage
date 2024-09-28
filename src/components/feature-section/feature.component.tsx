@@ -46,7 +46,7 @@ const FeatureSection = () => {
   ];
 
   return (
-    <div>
+    <div id="about-us">
       <div className="hero bg-base-200 about-us">
         <div className="hero-content flex-col lg:flex-row">
           <img
@@ -84,7 +84,7 @@ const FeatureSection = () => {
         </div>
       </div>
       {/* SERVICES */}
-      <div className="all-services">
+      <div className="all-services" id="services">
         <div className="text-5xl font-bold services-title">
           <p>Our Plumbing Services</p>
         </div>
