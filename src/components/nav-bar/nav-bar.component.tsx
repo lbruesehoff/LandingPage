@@ -1,10 +1,17 @@
 import React from "react";
 import "./nav-bar.component.scss";
+import logo from "../../assets/icons/logo.svg";
 
 const NavBar = () => {
+  const scrollTo = (id: string) => {
+    const aboutUs = document.querySelector(id);
+    aboutUs?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
+        {/* MOBILE VIEW */}
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -26,35 +33,39 @@ const NavBar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Item 1</a>
+            <li onClick={() => scrollTo("#about-us")}>
+              <a>About Us</a>
             </li>
-            <li>
-              <a>Item 2</a>
+            <li onClick={() => scrollTo("#services")}>
+              <a>Services</a>
             </li>
 
-            <li>
-              <a>Item 3</a>
+            <li onClick={() => scrollTo("#contact-us")}>
+              <a>Contact Us</a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <div className="logo-container">
+          <img src={logo} alt="Shoes" className="logo" />{" "}
+          <div className="logo-name">Plumbing</div>
+        </div>
       </div>
+      {/* DESKTOP VIEW */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
+          <li onClick={() => scrollTo("#about-us")}>
+            <a>About Us</a>
           </li>
-          <li>
-            <a>Item 2</a>
+          <li onClick={() => scrollTo("#services")}>
+            <a>Services</a>
           </li>
-          <li>
-            <a>Item 3</a>
+          <li onClick={() => scrollTo("#contact-us")}>
+            <a>Contact Us</a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <button className="btn btn-primary">Contact Us</button>
       </div>
     </div>
   );

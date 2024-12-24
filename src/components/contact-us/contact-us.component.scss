@@ -1,0 +1,10 @@
+.contact-us {
+  min-height: 50vh;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 961px) {
+  .contact-us {
+    padding: 1rem 0;
+  }
+}
