@@ -51,7 +51,7 @@ const FeatureSection = () => {
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={require("../../assets/images/plumbing.jpg")}
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="rounded-lg shadow-2xl"
             alt="Plumbing"
           />
           <div>
