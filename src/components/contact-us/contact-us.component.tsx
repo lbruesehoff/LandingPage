@@ -5,7 +5,7 @@ import "./contact-us.component.scss";
 const ContactUs = () => {
   return (
     <div className="hero bg-base-200 min-h-screen contact-us" id="contact-us">
-      <div className="hero-content flex-col lg:flex-row-reverse">
+      <div className="contact-us-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Contact Us!</h1>
           <p className="py-6">
