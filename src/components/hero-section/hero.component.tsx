@@ -1,5 +1,5 @@
 import React from "react";
-import "./hero.component.scss";
+import "./hero.component.css";
 const Hero = () => {
   return (
     <div className="hero min-h-screen hero-background">

@@ -1,5 +1,5 @@
 import React from "react";
-import "./dynamic-card.component.scss";
+import "./dynamic-card.component.css";
 
 const DynamicCard = ({ title, body, image }) => {
   return (

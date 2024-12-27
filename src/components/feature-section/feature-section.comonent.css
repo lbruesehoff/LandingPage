@@ -23,16 +23,16 @@
   padding: 1rem 0;
 }
 
-// RESPONSIVE
+/* RESPONSIVE */
 
-//HIGH RES DISPLAYS
+/* HIGH RES DISPLAYS */
 @media only screen and (min-width: 1281px) {
   .services {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-// MOBILE / TABLET
+/* MOBILE / TABLET */
 @media only screen and (max-width: 961px) {
   .services {
     grid-template-columns: 1fr;

@@ -3,9 +3,9 @@
   min-height: 50vh;
 }
 
-//RESPONSIVE
+/* RESPONSIVE */
 
-// MOBILE / TABLET
+/* MOBILE / TABLET */
 @media only screen and (max-width: 961px) {
   .hero-background {
     min-height: 100vh;

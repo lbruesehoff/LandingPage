@@ -1,9 +1,9 @@
 import React from "react";
-import "./nav-bar.component.scss";
+import "./nav-bar.component.css";
 import logo from "../../assets/icons/logo.svg";
 
 const NavBar = () => {
-  const scrollTo = (id: string) => {
+  const scrollTo = (id) => {
     const aboutUs = document.querySelector(id);
     aboutUs?.scrollIntoView({ behavior: "smooth" });
   };

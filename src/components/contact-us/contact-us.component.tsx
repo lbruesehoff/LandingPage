@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./contact-us.component.scss";
+import "./contact-us.component.css";
 
 const ContactUs = () => {
   return (

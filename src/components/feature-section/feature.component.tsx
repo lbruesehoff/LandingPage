@@ -9,7 +9,7 @@ import maintenance from "../../assets/icons/maintenance.svg";
 import water from "../../assets/icons/water.svg";
 import fire from "../../assets/icons/fire.svg";
 
-import "./feature-section.comonent.scss";
+import "./feature-section.comonent.css";
 
 const FeatureSection = () => {
   const cards = [

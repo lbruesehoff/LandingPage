@@ -5,12 +5,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 
-const isProduction = process.env.NODE_ENV == "production";
+const isProduction = process.env.NODE_ENV === "production";
 
 const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
-  entry: "./src/index.ts",
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -31,13 +31,18 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)$/i,
-        loader: "ts-loader",
+        test: /\.(js|jsx|tsx|ts)$/,
+        loader: "babel-loader",
         exclude: ["/node_modules/"],
       },
       {
         test: /\.css$/i,
-        use: [stylesHandler, "css-loader", "postcss-loader"],
+        include: path.resolve(__dirname, "src"),
+        use: [
+          stylesHandler,
+          { loader: "css-loader", options: { importLoaders: 2 } },
+          "postcss-loader",
+        ],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,

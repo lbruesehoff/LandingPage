@@ -1,16 +1,4 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>2</title>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-
-  <script>
-    if ("serviceWorker" in navigator) {
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>2</title><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head><body><div id="root"></div></body><script>if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
         navigator.serviceWorker
           .register("service-worker.js")
@@ -24,6 +12,4 @@
             );
           });
       });
-    }
-  </script>
-</html>
+    }</script></html>
